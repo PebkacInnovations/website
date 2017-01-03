@@ -87,9 +87,6 @@ body {
   color: #fff;
   float: left;
 }
-.poweredby img {
-  display: inline-flex;
-}
 
 .wip a {
   text-decoration: none;
@@ -104,7 +101,4 @@ body {
   font-weight: 300;
   color: #fff;
   float: left;
-}
-.wip img {
-  display: inline-flex;
 }
