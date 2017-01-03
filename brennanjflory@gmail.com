@@ -28,7 +28,7 @@
     </div>
 	  
     <div class="wip">
-      <a href="https://PebkacInnovations.com/">
+      <a href="http://PebkacInnovations.com/">
 	<p>Coming Soon™</p>
       </a>
     </div>
