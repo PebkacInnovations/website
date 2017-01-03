@@ -23,7 +23,7 @@
     
     <div class="poweredby">
       <a href="http://PebkacInnovations.com/">
-	<p>Powered by: Peach The Scrub for President</p>
+	<p>Powered by: Peach The Scrub for President!!</p>
       </a>
     </div>
 	  
@@ -36,11 +36,11 @@
 
 
   <div class="nav">
-    <a href="https://PebkecInnovations.com/faq" target="_blank" title="Frequently Asked Questions">FAQ</a>
+    <a href="https://PebkacInnovations.com/faq" target="_blank" title="Frequently Asked Questions">FAQ</a>
     <span class="pad"></span>
-    <a href="https://PebkecInnovations.com/stories" target="_blank" title="Stories">Stories</a>
+    <a href="https://PebkacInnovations.com/stories" target="_blank" title="Stories">Stories</a>
     <span class="pad"></span>
-    <a href="https://PebkecInnovations.com/contact" target="_blank" title="Contact Us">Contact</a>
+    <a href="https://PebkacInnovations.com/contact" target="_blank" title="Contact Us">Contact</a>
   </div>
 	
 	
