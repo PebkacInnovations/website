@@ -36,11 +36,11 @@
 
 
   <div class="nav">
-    <a href="https://PebkacInnovations.com/faq" target="_blank" title="Frequently Asked Questions">FAQ</a>
+    <a href="https://PebkacInnovations.com/faq.html" target="_blank" title="Frequently Asked Questions">FAQ</a>
     <span class="pad"></span>
-    <a href="https://PebkacInnovations.com/stories" target="_blank" title="Stories">Stories</a>
+    <a href="https://PebkacInnovations.com/stories.html" target="_blank" title="Stories">Stories</a>
     <span class="pad"></span>
-    <a href="https://PebkacInnovations.com/contact" target="_blank" title="Contact Us">Contact</a>
+    <a href="https://PebkacInnovations.com/contact.html" target="_blank" title="Contact Us">Contact</a>
   </div>
 	
 	
