@@ -25,48 +25,57 @@
 
 <body>
 
-  <span class="upload-button-container">
-              <div id="createDropdown" class="options create-dropdown-opened">
-                  <ul>
-                      <li class="item"><a href="//imgur.com/upload" class="upload-subitem">Upload Images</a></li>
-                      <li class="item"><a href="//imgur.com/vidgif" data-jafo="{@@event@@:@@vidToGifInvoked@@,@@meta@@:{@@control@@:@@uploadImagesDropdown@@}}">Video to GIF</a></li>
-                      <li class="item"><a href="//imgur.com/memegen" data-jafo="{@@event@@:@@makeAMeme@@,@@meta@@:{@@control@@:@@uploadImagesDropdown@@}}">Make a Meme</a></li>
-                  </ul>
-              </div>
-              <a class="upload-button" href="//imgur.com/upload">
-                  <span class="icon-upload"></span>
-                  <span class="upload-btn-text">New post</span>
-                  <span id="create-dropdown-button" class="selection icon icon-arrow-down"></span>
-              </a>
-          </span>
 
-          <div id="upload-modal-backdrop" class="modal-backdrop drop-target normal-transition">
-            <div id="upload-modal" class="modal">
-              <div class="icon-x">
-              </div>
-              <div class="primary-actions">
-                <div class="drag-drop-box">
-                  <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
-                  <img class="upload-pointer" src="//s.imgur.com/images/upload-pointer.png">
-                  <div class="icon-upload">
-                  </div>
-                </div>
-                <div class="drag-drop-text">
-                  <input type="file" id="global-files-button" class="nodisplay" name="files[]" multiple="" accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.pdf,.xcf,.webp">
-                  <label class="browse-btn" for="global-files-button">Browse</label>
-                  <!-- react-text: 18 -->&nbsp;<!-- /react-text -->
-                  <span>or drag images here.</span>
-                </div>
-                <div class="paste-url">
-                  <input id="paste-url-input" placeholder="Paste Image or URL">
-                </div>
-              </div>
-              <div id="bottom-apps-container">
-                <a>Meme Gen</a>
-                <a>Video to Gif</a>
-                <a>Browse my Imgur Uploads</a>
-              </div>
-            </div>
-          </div>
-          
+
+  <div>DROP!<button onclick="document.querySelector('input').click()">Or click</button></div>
+  <input style="visibility: collapse; width: 0px;" type="file" onchange="upload(this.files[0])">
+
+  <!-- So here is the magic -->
+  <script>
+      /* Drag'n drop stuff */
+      window.ondragover = function(e) {e.preventDefault()}
+      window.ondrop = function(e) {e.preventDefault(); upload(e.dataTransfer.files[0]); }
+      function upload(file) {
+          /* Is the file an image? */
+          if (!file || !file.type.match(/image.*/)) return;
+          /* It is! */
+          document.body.className = "uploading";
+          /* Lets build a FormData object*/
+          var fd = new FormData(); // I wrote about it: https://hacks.mozilla.org/2011/01/how-to-develop-a-html5-image-uploader/
+          fd.append("image", file); // Append the file
+          var xhr = new XMLHttpRequest(); // Create the XHR (Cross-Domain XHR FTW!!!) Thank you sooooo much imgur.com
+          xhr.open("POST", "https://api.imgur.com/3/image.json"); // Boooom!
+          xhr.onload = function() {
+              // Big win!
+              document.querySelector("#link").href = JSON.parse(xhr.responseText).data.link;
+              document.body.className = "uploaded";
+          }
+
+          xhr.setRequestHeader('Authorization', 'Client-ID 28aaa2e823b03b1'); // Get your own Client-ID at http://api.imgur.com/
+
+          // Ok, I don't handle the errors. An exercise for the reader.
+          /* And now, we send the formdata */
+          xhr.send(fd);
+      }
+  </script>
+
+  <!-- Bla bla bla stuff ... -->
+
+  <style>
+      body {text-align: center; padding-top: 100px;}
+      div { border: 10px solid black; text-align: center; line-height: 100px; width: 200px; margin: auto; font-size: 40px; display: inline-block;}
+      #link, p , div {display: none}
+      div {display: inline-block;}
+      .uploading div {display: none}
+      .uploaded div {display: none}
+      .uploading p {display: inline}
+      .uploaded #link {display: inline}
+      em {position: absolute; bottom: 0; right: 0}
+  </style>
+
+  <p>Uploading...</p>
+  <a id="link">It's online!!!</a>
+
+  <em>Look at the source code for more information. By <a href="http://twitter.com/paulrouget">@paulrouget</a>.</em>
+
 </body>
