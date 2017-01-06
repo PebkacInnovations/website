@@ -13,6 +13,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   display: table;
+  color:#fffad5;
 }
 
 .center {
@@ -39,7 +40,7 @@ body {
   letter-spacing: .03em;
   line-height: 36px;
   text-transform: uppercase;
-  color: #fff;
+  color:#fffad5;
   text-decoration: none;
   background-color: transparent;
   transition: all .2s ease-in-out;
@@ -65,7 +66,7 @@ body {
   overflow: hidden;
 }
 .nav a:visited {
-  color: #fff;
+  color:#fffad5;
 }
 .nav a:active {
   outline: 0;
@@ -84,7 +85,13 @@ body {
 .poweredby p {
   margin: 9px 4px 9px 0;
   font-weight: 300;
-  color: #fff;
+  color:#fffad5;
+  float: left;
+}
+.poweredby h3 {
+  margin: 9px 4px 9px 0;
+  font-weight: 300;
+  color:#fffad5;
   float: left;
 }
 
@@ -99,7 +106,13 @@ body {
 .wip p {
   margin: 9px 4px 9px 0;
   font-weight: 300;
-  color: #fff;
+  color:#fffad5;
+  float: left;
+}
+.wip h3 {
+  margin: 9px 4px 9px 0;
+  font-weight: 300;
+  color:#fffad5;
   float: left;
 }
 
