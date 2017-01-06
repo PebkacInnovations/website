@@ -102,3 +102,9 @@ body {
   color: #fff;
   float: left;
 }
+
+footer {
+    position: absolute;
+    bottom:-50px;
+    margin-left:15px;
+}
