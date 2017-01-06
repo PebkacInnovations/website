@@ -23,7 +23,7 @@ body {
 .logo {
   max-width: 20%;
 }
-
+/*
 .nav {
   width: 100%;
   position: absolute;
@@ -44,7 +44,7 @@ body {
   background-color: transparent;
   transition: all .2s ease-in-out;
   display: inline-block;
-  
+
   border: none;
   outline: 0;
   border-radius: 2px;
@@ -60,7 +60,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-    
+
   position: relative;
   overflow: hidden;
 }
@@ -72,7 +72,7 @@ body {
   text-decoration: none;
   background-color: rgba(242, 242, 242, 0.6);
 }
-
+*/
 .poweredby a {
   text-decoration: none;
   display: inline-block;
