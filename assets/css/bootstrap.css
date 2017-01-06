@@ -4167,6 +4167,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+*/
 .navbar {
   position: relative;
   min-height: 50px;
@@ -4178,6 +4179,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-radius: 4px;
   }
 }
+/*
 @media (min-width: 768px) {
   .navbar-header {
     float: left;
@@ -4211,6 +4213,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-collapse.in {
     overflow-y: visible;
   }
+  */
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
@@ -4228,6 +4231,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
+/*
 .container > .navbar-header,
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
@@ -4253,6 +4257,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-radius: 0;
   }
 }
+*/
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
@@ -4275,6 +4280,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   border-width: 1px 0 0;
 }
+/*
 .navbar-brand {
   float: left;
   height: 50px;
@@ -4454,6 +4460,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+*/
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
   border-top-left-radius: 4px;
@@ -4461,6 +4468,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+/*
 .navbar-btn {
   margin-top: 8px;
   margin-bottom: 8px;
