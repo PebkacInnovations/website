@@ -27,7 +27,7 @@ body {
 
 .nav {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 25px; left: 0;
   text-align: center;
 }
@@ -118,9 +118,6 @@ body {
 
 .footer{
     position:fixed;
-    height:50px;
     bottom:0px;
-    left:0px;
-    right:0px;
-    margin-bottom:0px;
+    margin-left:0px;
 }
