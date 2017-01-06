@@ -24,29 +24,21 @@
 </head>
 
 <body>
-
-  <div id="upload-modal-backdrop" class="modal-backdrop drop-target normal-transition">
-    <div id="upload-modal" class="modal">
-      <div class="icon-x">
-      </div>
-      <div class="primary-actions">
-        <div class="drag-drop-box">
-          <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
-          <img class="upload-pointer" src="//s.imgur.com/images/upload-pointer.png">
-          <div class="icon-upload">
-          </div>
-        </div>
-        <div class="drag-drop-text">
-          <div><button onclick="document.querySelector('input').click()">Browse</button></div>
-          <span>or drag images here.</span>
-          <input style="visibility: collapse; width: 0px;" type="file" multiple="" accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.pdf,.xcf,.webp" onchange="upload(this.files[0])">
-        </div>
-        <div class="paste-url">
-          <input id="paste-url-input" placeholder="Paste Image or URL">
-        </div>
-      </div>
+  <div class="drag-drop-box">
+    <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
+    <img class="upload-pointer" src="//s.imgur.com/images/upload-pointer.png">
+    <div class="icon-upload">
     </div>
   </div>
+  <div class="drag-drop-text">
+    <div><button onclick="document.querySelector('input').click()">Browse</button></div>
+    <span>or drag images here.</span>
+    <input style="visibility: collapse; width: 0px;" type="file" multiple="" accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.pdf,.xcf,.webp" onchange="upload(this.files[0])">
+  </div>
+  <div class="paste-url">
+    <input id="paste-url-input" placeholder="Paste Image or URL">
+  </div>
+  
   <!--
   <div>DROP!<button onclick="document.querySelector('input').click()">Or click</button></div>
   <input style="visibility: collapse; width: 0px;" type="file" onchange="upload(this.files[0])">
