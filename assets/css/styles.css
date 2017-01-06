@@ -17,6 +17,14 @@ body {
   padding-bottom: 6;
 }
 
+
+#main-wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 0 100px;
+    position: relative;
+}
+
 .center {
   display: table-cell;
   vertical-align: middle;
