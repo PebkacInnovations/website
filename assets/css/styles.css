@@ -117,8 +117,10 @@ body {
   float: left;
 }
 
-.footer{
-    position:fixed;
-    bottom:0px;
-    margin-left:0px;
+.footer {
+    bottom: 0;
+    height: 100px;
+    margin-left: 15;
+    position: absolute;
+    width: 100%;
 }
