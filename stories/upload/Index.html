@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8">
@@ -13,154 +14,16 @@
 	<link rel="icon" type="image/png" href="../../favicon.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+	<link href="../../assets/css/bootstrap.css" rel="stylesheet">
 	<link href="../../assets/css/styles.css" rel="stylesheet">
 	<link href="../../assets/css/3-col-portfolio.css" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../../assets/css/global.css">
-  <link rel="stylesheet" type="text/css" href="http://s.imgur.com/min/gallery.css?1483583267">
-
 </head>
 
 <body>
 
-  <div id="topbar">
-      <div class="header-center">
-          <a href="//imgur.com" class="topbar-icon logo " data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@logo@@}}">
-              <div class="logo-icon"></div>
-          </a>
-
-          <span class="topbar-icon menu-btn icon-arrow-down">
-              <div class="link-menu">
-                  <ul>
-                      <li><a href="//imgur.com/jobs" class="hiring" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@jobs@@}}">we're hiring!</a></li>
-                                          <li><a href="//imgur.com/blog" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@blog@@,@@new@@:false}}">blog</a></li>
-
-                      <li><a href="//imgur.com/about" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@about@@}}">about imgur</a></li>
-                      <li><a href="//store.imgur.com" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@store@@}}">imgur store</a></li>
-                      <li><a href="//imgur.com/apps" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@apps@@}}">imgur apps</a></li>
-                      <li><a href="//api.imgur.com" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@api@@}}">developer api</a></li>
-                      <li><a href="http://www.imgurads.com/" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@advertise@@}}">advertise</a></li>
-                      <li><a href="//help.imgur.com/hc/en-us" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@help@@}}">need help?</a></li>
-                  </ul>
-                  <div class="clear"></div>
-                  <div class="dropdown-footer hamburger-menu">
-                      <div class="terms-footer">
-                          <a href="//imgur.com/tos" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@terms@@}}">terms</a>
-                          <a href="//imgur.com/privacy" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@privacy@@}}">privacy</a>
-                          <a class="small-margin-top" href="//imgur.com/privacy#adchoices" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@adchoices@@}}">ad choices</a>
-                      </div>
-
-                      <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fimgur&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="display:inline-block; border:none; overflow:hidden; height:20px; width:50px; margin-right:7px;" allowtransparency="true"></iframe>
-                      <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.3748f7cda49448f6c6f7854238570ba0.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=imgur&amp;show_count=false&amp;show_screen_name=false&amp;size=m&amp;time=1483750609104" data-screen-name="imgur" style="position: static; visibility: visible; width: 63px; height: 20px;"></iframe>
-
-                  </div>
-              </div>
-          </span>
-
-          <span class="upload-button-container">
-              <div id="createDropdown" class="options create-dropdown-opened">
-                  <ul>
-                      <li class="item"><a href="//imgur.com/upload" class="upload-subitem">Upload Images</a></li>
-                      <li class="item"><a href="//imgur.com/vidgif" data-jafo="{@@event@@:@@vidToGifInvoked@@,@@meta@@:{@@control@@:@@uploadImagesDropdown@@}}">Video to GIF</a></li>
-                      <li class="item"><a href="//imgur.com/memegen" data-jafo="{@@event@@:@@makeAMeme@@,@@meta@@:{@@control@@:@@uploadImagesDropdown@@}}">Make a Meme</a></li>
-                  </ul>
-              </div>
-              <a class="upload-button" href="//imgur.com/upload">
-                  <span class="icon-upload"></span>
-                  <span class="upload-btn-text">New post</span>
-                  <span id="create-dropdown-button" class="selection icon icon-arrow-down"></span>
-              </a>
-          </span>
-          <div id="secondary-nav">
-              <ul class="user-nav">
-                  <li id="global-search-container"><div data-reactroot="" class="search-container search-closed"><form class="search-form" method="get" action="//imgur.com/search"><input type="text" autocomplete="off" class="search" name="q"><div class="search-icon-container"><div class="icon-search"></div></div></form></div></li>
-                                      <li class="notification-container red nodisplay">
-                          <a href="//imgur.com/account/notifications" class="notification-area new-notification">0</a>
-                      </li>
-
-                      <li class="notification-conversations"><div data-reactroot=""><a href="//imgur.com/account/messages" class="unread-count"><span class="unread-count">0</span></a><i class="icon-messages-filled conversations"></i></div></li>
-
-                      <li class="notification-events"><div data-reactroot=""><i class="icon-notifications events"><span class="unseen-count">0</span></i><!-- react-text: 4 --><!-- /react-text --></div></li>
-
-                      <li class="account">
-                          <a href="//imgur.com/user/BrennanFlory" class="topbar-icon account-user-name" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@user@@,@@section@@:@@username@@}}">BrennanFlory</a>
-                          <div id="FlipInfo-Container"></div>
-                          <div class="user-dropdown-container">
-                              <ul class="user-dropdown">
-                                  <li><a href="//BrennanFlory.imgur.com/all/" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@user@@,@@section@@:@@images@@}}">images</a></li>
-                                  <li><a href="//BrennanFlory.imgur.com/" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@user@@,@@section@@:@@albums@@}}">albums</a></li>
-                                  <li><a href="//imgur.com/user/BrennanFlory" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@user@@,@@section@@:@@profile@@}}">gallery profile</a></li>
-                                  <li><a href="//imgur.com/account/favorites" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@user@@,@@section@@:@@favorites@@}}">favorites</a></li>
-                                  <li><a href="//imgur.com/account/messages" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@user@@,@@section@@:@@messages@@}}">messages</a></li>
-                              </ul>
-                              <div class="dropdown-footer">
-                                  <a href="//imgur.com/account/settings" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@user@@,@@section@@:@@settings@@}}">settings</a>
-                                  <a href="//imgur.com/logout/logout?msid=53e16e7c89ceb5b80e02fd01f97f5c1e" data-jafo="{@@event@@:@@header@@,@@meta@@:{@@link@@:@@user@@,@@section@@:@@logout@@}}">logout</a>
-                              </div>
-                          </div>
-                      </li>
-
-              </ul>
-          </div> <!-- #secondary-nav -->
-      </div> <!-- .header-center -->
-  </div>
-
-  <div id="upload-global">
-    <div data-reactroot="" class="upload-global-layout">
-      <div class="total-upload-progress" style="transform: scaleX(0); transform-origin: 100% 100% 0px;"></div>
-      <div>
-        <div contenteditable="true" class="ff-paste-hack"></div>
-        <span>
-          <div id="upload-modal-backdrop" class="modal-backdrop drop-target normal-transition">
-            <div id="upload-modal" class="modal">
-              <div class="icon-x"></div>
-              <div class="primary-actions">
-                <div class="drag-drop-box">
-                  <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
-                  <img class="upload-pointer" src="//s.imgur.com/images/upload-pointer.png">
-                  <div class="icon-upload"></div>
-                </div>
-                <div class="drag-drop-text">
-                  <input type="file" id="global-files-button" class="nodisplay" name="files[]" multiple="" accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.pdf,.xcf,.webp">
-                  <label class="browse-btn" for="global-files-button">Browse</label>
-                  <!-- react-text: 17 -->&nbsp;<!-- /react-text -->
-                  <span>or drag images here.</span></div><div class="paste-url">
-                    <input id="paste-url-input" placeholder="Paste Image or URL"></div>
-                  </div>
-                  <div id="bottom-apps-container">
-                    <a>Meme Gen</a>
-                    <a>Video to Gif</a>
-                    <a>Browse my Imgur Uploads</a>
-                  </div>
-                </div>
-              </div>
-            </span>
-          </div>
-          <span>
-          </span>
-        </div>
-      </div>
-  <!--
-  <div class="popup">
-    <div class="drag-drop-box">
-      <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
-      <img class="upload-pointer" src="//s.imgur.com/images/upload-pointer.png">
-      <div class="icon-upload"></div>
-    </div>
-    <div class="drag-drop-text">
-      <div><button onclick="document.querySelector('input').click()">Browse</button></div>
-      <span>or drag images here.</span>
-      <input style="visibility: collapse; width: 0px;" type="file" multiple="" accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.pdf,.xcf,.webp" onchange="upload(this.files[0])">
-    </div>
-    <div class="paste-url">
-      <input id="paste-url-input" placeholder="Paste Image or URL">
-    </div>
-  </div>
-
-  <div>DROP!<button onclick="document.querySelector('input').click()">Or click</button></div>
+  <div class="popup">Drang and Drop  <button onclick="document.querySelector('input').click()">Or click</button></div>
   <input style="visibility: collapse; width: 0px;" type="file" onchange="upload(this.files[0])">
-  -->
+
   <!-- So here is the magic -->
   <script>
       /* Drag'n drop stuff */
@@ -194,13 +57,12 @@
 
 
   <style>
-    /*div { border: 10px solid black; text-align: center; line-height: 100px; width: 200px; margin: auto; font-size: 40px; display: inline-block;}*/
-    #link, p , {display: none}
-    /*div {display: inline-block;}*/
-    .uploading div {display: none}
-    .uploaded div {display: none}
-    .uploading p {display: inline}
-    .uploaded #link {display: inline}
+      body {text-align: center; padding-top: 100px;}
+      #link, p , div {display: none}
+      .uploading div {display: none}
+      .uploaded div {display: none}
+      .uploading p {display: inline}
+      .uploaded #link {display: inline}
   </style>
 
   <p>Uploading...</p>
