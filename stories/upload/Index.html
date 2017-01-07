@@ -18,30 +18,36 @@
 	<link href="../../assets/css/3-col-portfolio.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://s.imgur.com/min/global.css">
-  <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/gallery.css?1483583267">
+  <link rel="stylesheet" type="text/css" href="http://s.imgur.com/min/global.css?1483729824">
+  <link rel="stylesheet" type="text/css" href="http://s.imgur.com/min/gallery.css?1483583267">
 
 </head>
 
 <body>
-  <div id="upload-modal" class="modal">
-    <div class="icon-x"></div>
-    <div class="primary-actions">
-      <div class="drag-drop-box">
-        <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
-        <img class="upload-pointer" src="//s.imgur.com/images/upload-pointer.png">
-        <div class="icon-upload"></div>
+<span>
+  <div id="upload-modal-backdrop" class="modal-backdrop drop-target normal-transition">
+    <div id="upload-modal" class="modal">
+      <div class="icon-x"></div>
+      <div class="primary-actions">
+        <div class="drag-drop-box">
+          <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
+          <img class="upload-pointer" src="//s.imgur.com/images/upload-pointer.png">
+          <div class="icon-upload"></div>
+        </div>
+        <div class="drag-drop-text">
+          <input type="file" id="global-files-button" class="nodisplay" name="files[]" multiple="" accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.pdf,.xcf,.webp">
+          <label class="browse-btn" for="global-files-button">Browse</label>
+          <!-- react-text: 17 -->&nbsp;<!-- /react-text -->
+          <span>or drag images here.</span>
+        </div>
+        <div class="paste-url">
+          <input id="paste-url-input" placeholder="Paste Image or URL"></div>
+        </div>
+        <div id="bottom-apps-container"><a>Meme Gen</a><a>Video to Gif</a><a>Browse my Imgur Uploads</a>
+        </div>
       </div>
-      <div class="drag-drop-text">
-        <input type="file" id="global-files-button" class="nodisplay" name="files[]" multiple="" accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.pdf,.xcf,.webp">
-        <label class="browse-btn" for="global-files-button">Browse</label>
-        <!-- react-text: 17 -->&nbsp;<!-- /react-text -->
-        <span>or drag images here.</span>
-      </div>
-      <div class="paste-url"><input id="paste-url-input" placeholder="Paste Image or URL"></div>
     </div>
-    <div id="bottom-apps-container"><a>Meme Gen</a><a>Video to Gif</a><a>Browse my Imgur Uploads</a></div>
-  </div>
+  </span>
   <!--
   <div class="popup">
     <div class="drag-drop-box">
