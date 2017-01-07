@@ -24,6 +24,25 @@
 </head>
 
 <body>
+  <div id="upload-modal" class="modal">
+    <div class="icon-x"></div>
+    <div class="primary-actions">
+      <div class="drag-drop-box">
+        <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
+        <img class="upload-pointer" src="//s.imgur.com/images/upload-pointer.png">
+        <div class="icon-upload"></div>
+      </div>
+      <div class="drag-drop-text">
+        <input type="file" id="global-files-button" class="nodisplay" name="files[]" multiple="" accept=".jpg,.jpeg,.png,.gif,.apng,.tiff,.tif,.bmp,.pdf,.xcf,.webp">
+        <label class="browse-btn" for="global-files-button">Browse</label>
+        <!-- react-text: 17 -->&nbsp;<!-- /react-text -->
+        <span>or drag images here.</span>
+      </div>
+      <div class="paste-url"><input id="paste-url-input" placeholder="Paste Image or URL"></div>
+    </div>
+    <div id="bottom-apps-container"><a>Meme Gen</a><a>Video to Gif</a><a>Browse my Imgur Uploads</a></div>
+  </div>
+  <!--
   <div class="popup">
     <div class="drag-drop-box">
       <img class="upload-giraffe" src="//s.imgur.com/images/upload-giraffe.png">
@@ -40,7 +59,6 @@
     </div>
   </div>
 
-  <!--
   <div>DROP!<button onclick="document.querySelector('input').click()">Or click</button></div>
   <input style="visibility: collapse; width: 0px;" type="file" onchange="upload(this.files[0])">
   -->
@@ -77,9 +95,9 @@
 
 
   <style>
-    div { border: 10px solid black; text-align: center; line-height: 100px; width: 200px; margin: auto; font-size: 40px; display: inline-block;}
+    /*div { border: 10px solid black; text-align: center; line-height: 100px; width: 200px; margin: auto; font-size: 40px; display: inline-block;}*/
     #link, p , div {display: none}
-    div {display: inline-block;}
+    /*div {display: inline-block;}*/
     .uploading div {display: none}
     .uploaded div {display: none}
     .uploading p {display: inline}
