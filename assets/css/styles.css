@@ -148,26 +148,6 @@ body {
   float: left;
 }
 
-#link, p , div {
-  display: none
-}
-
-.uploading div {
-  display: none
-}
-
-.uploaded div {
-  display: none
-}
-
-.uploading p {
-  display: inline
-}
-
-.uploaded #link {
-  display: inline
-}
-
 .footer {
     bottom: 0;
     height: 30px;
