@@ -31,7 +31,7 @@
       window.ondrop = function(e) {e.preventDefault(); upload(e.dataTransfer.files[0]); }
       function upload(file) {
           /* Is the file an image? */
-          if (!file || !file.type.match(/(gif|png|jpg|jpeg|gifv)$/)) return;
+          if (!file || !file.type.match(/image.*/)) return;
           /* It is! */
           document.body.className = "uploading";
           /* Lets build a FormData object*/
