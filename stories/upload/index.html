@@ -21,7 +21,7 @@
 
 <body>
 
-  <div id="popup">Drang and Drop  <button onclick="document.querySelector('input').click()">Or click</button></div>
+  <div class="popup">Drang and Drop  <button onclick="document.querySelector('input').click()">Or click</button></div>
   <input style="visibility: collapse; width: 0px;" type="file" onchange="upload(this.files[0])">
 
   <!-- So here is the magic -->
@@ -57,16 +57,16 @@
 
 
   <style>
-      #link, p , popup {display: none}
-      .uploading popup {display: none}
-      .uploaded popup {display: none}
+	    body {text-align: center; padding-top: 100px;}
+      #link, p , div {display: none}
+      .uploading div {display: none}
+      .uploaded div {display: none}
       .uploading p {display: inline}
       .uploaded #link {display: inline}
   </style>
 
-  <div class="imgurupload">
+
     <p>Uploading...</p>
     <a id="link">It's online!!!</a>
-  </div>
 
 </body>

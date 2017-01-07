@@ -15,7 +15,7 @@ body {
   color:#fffad5;
 }
 
-#popup {
+.popup {
     display: inline-table;
     vertical-align: middle;
     text-align: center;
