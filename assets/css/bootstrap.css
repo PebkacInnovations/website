@@ -3623,7 +3623,7 @@ tbody.collapse.in {
   right: 0;
   left: auto;
 }
-/*
+
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   content: "";
@@ -3637,6 +3637,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px;
 }
+/*
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
     right: 0;
