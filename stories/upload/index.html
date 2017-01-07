@@ -21,7 +21,7 @@
 
 <body>
 
-  <div class="popup">Drang and Drop  <button onclick="document.querySelector('input').click()">Or click</button></div>
+  <div class="popup">Drang and Drop  <button onclick="document.querySelector('input').click()">Browse</button></div>
   <input style="visibility: collapse; width: 0px;" type="file" onchange="upload(this.files[0])">
 
   <!-- So here is the magic -->
@@ -45,7 +45,7 @@
               document.body.className = "uploaded";
           }
 
-          xhr.setRequestHeader('Authorization', 'Client-ID 28aaa2e823b03b1'); // Get your own Client-ID at http://api.imgur.com/
+          xhr.setRequestHeader('Authorization', 'Client-ID 06a3c2534e4834e'); // Get your own Client-ID at http://api.imgur.com/
 
           // Ok, I don't handle the errors. An exercise for the reader.
           /* And now, we send the formdata */
