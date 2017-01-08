@@ -150,7 +150,16 @@ body {
   color:#fffad5;
   float: left;
 }
-
+.faqcontent{
+  padding-left: 10px;
+  text-align: left;
+}
+.faqcontent a{
+  padding-left: 50px
+}
+.answer{
+  padding-left: 50px
+}
 .footer {
     bottom: 0;
     height: 30px;
