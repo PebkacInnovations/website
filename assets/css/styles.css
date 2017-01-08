@@ -68,7 +68,7 @@ body {
   margin: 6px 8px 6px 0; padding: 0 26px;
 
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: .03em;
   line-height: 36px;
   text-transform: uppercase;
@@ -166,5 +166,5 @@ body {
     position: absolute;
     width: 100%;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
 }
