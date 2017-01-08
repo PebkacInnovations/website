@@ -150,6 +150,7 @@ body {
   color:#fffad5;
   float: left;
 }
+<<<<<<< HEAD
 .faqcontent{
   padding-left: 10px;
   text-align: left;
@@ -160,6 +161,53 @@ body {
 .answer{
   padding-left: 50px
 }
+=======
+
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.nav-wrapper {
+   width:100%;
+}
+
+.nav-menu {
+   position:relative;
+   display:inline-block;
+   color: black;
+   background-color: green;
+   border: 2px solid black;
+   border-radius: 25px;
+}
+}
+
+.nav-menu li {
+   display: inline;
+   list-style-type: none;
+
+
+.sub-menu {
+   position:absolute;
+   display:none;
+   color: black;
+   background-color: green;
+   border: 2px solid black;
+   border-radius: 25px;
+}
+
+.nav-menu ul li:hover > ul {
+   display:inline-block;
+}
+
+.nav-menu > ul > li:after {
+   content: "\25BC"; /*escaped unicode for the down arrow*/
+   font-size: .5em;
+   display: inline;
+   position: relative;
+}
+
+>>>>>>> origin/master
 .footer {
     bottom: 0;
     height: 30px;
