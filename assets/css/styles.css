@@ -158,23 +158,30 @@ body {
 
 .nav-wrapper {
    width:100%;
-   background: #999;
 }
 
 .nav-menu {
    position:relative;
    display:inline-block;
+   border:
 }
 
 .nav-menu li {
    display: inline;
    list-style-type: none;
+   color: black;
+   background-color: green;
+   border: 2px solid black;
+   border-radius: 25px;
 }
 
 .sub-menu {
    position:absolute;
    display:none;
-   background: #ccc;
+   color: black;
+   background-color: green;
+   border: 2px solid black;
+   border-radius: 25px;
 }
 
 .nav-menu ul li:hover > ul {
