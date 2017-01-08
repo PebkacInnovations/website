@@ -14,9 +14,13 @@
 	<link rel="icon" type="image/png" href="../../favicon.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
-	<link href="../../assets/css/bootstrap.css" rel="stylesheet">
-	<link href="../../assets/css/styles.css" rel="stylesheet">
-	<link href="../../assets/css/3-col-portfolio.css" rel="stylesheet">
+	<link href="../assets/css/bootstrap.css" rel="stylesheet">
+	<link href="../assets/css/styles.css" rel="stylesheet">
+	<link href="../assets/css/3-col-portfolio.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="../assets/js/bootstrp.js"></script>
+	<link href="../assets/css/popup.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,6 +32,26 @@
 	    	<div class="col-lg-12">
 	      	<h1 class="page-header">Stories
 	        	<small>All the memes</small>
+						<button id="myBtn" class="upload">Upload</button>
+
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+						  <!-- Modal content -->
+						  <div class="modal-content">
+						    <div class="modal-header">
+						      <span class="close">&times;</span>
+						      <h2>Upload Form</h2>
+						    </div>
+						    <div class="modal-body">
+									<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl_dD0fc0Y-9nxtHVatOEgPlB4z7Y7VAQSI9bg8gi7E80OuQ/viewform?embedded=true" width="760" height="1080" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+						    </div>
+						    <div class="modal-footer">
+						      <h3>&copy; 2017 - PEBKAC Innovations</h3>
+						    </div>
+						  </div>
+
+						</div>
 	      	</h1>
 	      </div>
 	    </div>
@@ -37,17 +61,17 @@
  	    <div class="row">
  	    	<div class="col-md-4 portfolio-item">
  	      	<a href="#">
- 	        	<img class="img-responsive" src="http://images.memes.com/meme/1299476" alt="">
+ 	        	<img class="img-responsive" src="http://images.memes.com/meme/1299476" width="300" height="300" alt="">
  	        </a>
  	      </div>
  	    	<div class="col-md-4 portfolio-item">
  	    		<a href="#">
-  	      	<img class="img-responsive" src="http://i.imgur.com/8iY61de.jpg" alt="">
+  	      	<img class="img-responsive" src="http://i.imgur.com/8iY61de.jpg" width="300" height="300" alt="">
 	        </a>
 	      </div>
 	      	<div class="col-md-4 portfolio-item">
 	        	<a href="#">
-	          	<iframe width="400" height="400" src="https://www.youtube.com/embed/q6EoRBvdVPQ?controls=0" frameborder="0" allowfullscreen></iframe>
+	          	<iframe width="300" height="300" src="https://www.youtube.com/embed/q6EoRBvdVPQ?controls=0" frameborder="0" allowfullscreen></iframe>
 	          </a>
 	        </div>
 	    </div>
@@ -57,17 +81,17 @@
 			<div class="row">
 					<div class="col-md-4 portfolio-item">
 							<a href="#">
-									<img class="img-responsive" src="http://images.memes.com/meme/1299470" alt="">
+									<img class="img-responsive" src="http://images.memes.com/meme/1299470" width="300" height="300" alt="">
 							</a>
 					 </div>
 					 <div class="col-md-4 portfolio-item">
 							<a href="#">
-									 <img class="img-responsive" src="http://i.imgur.com/nVMZyqh.jpg" width="400" height="400" alt="">
+									 <img class="img-responsive" src="http://i.imgur.com/nVMZyqh.jpg" width="300" height="300" alt="">
 							 </a>
 					 </div>
 					 <div class="col-md-4 portfolio-item">
 							 <a href="#">
-									 <img class="img-responsive" src="https://i.ytimg.com/vi/tYBk4kLHPkk/maxresdefault.jpg" alt="">
+									 <img class="img-responsive" src="https://i.ytimg.com/vi/tYBk4kLHPkk/maxresdefault.jpg" width="300" height="300" alt="">
 							</a>
 					 </div>
 			</div>
@@ -123,6 +147,8 @@
 		</div>
 
 	</div>
+
+	<script src="../assets/js/popout.js"></script>
 
 </body>
 </html>
