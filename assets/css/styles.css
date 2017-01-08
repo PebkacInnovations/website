@@ -150,7 +150,7 @@ body {
   color:#fffad5;
   float: left;
 }
-<<<<<<< HEAD
+
 .faqcontent{
   padding-left: 10px;
   text-align: left;
@@ -161,7 +161,6 @@ body {
 .answer{
   padding-left: 50px
 }
-=======
 
 .clearfix:after {
   content: "";
@@ -207,7 +206,7 @@ body {
    position: relative;
 }
 
->>>>>>> origin/master
+
 .footer {
     bottom: 0;
     height: 30px;
