@@ -163,17 +163,17 @@ body {
 .nav-menu {
    position:relative;
    display:inline-block;
-   border:
-}
-
-.nav-menu li {
-   display: inline;
-   list-style-type: none;
    color: black;
    background-color: green;
    border: 2px solid black;
    border-radius: 25px;
 }
+}
+
+.nav-menu li {
+   display: inline;
+   list-style-type: none;
+
 
 .sub-menu {
    position:absolute;
